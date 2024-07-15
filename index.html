@@ -58,15 +58,15 @@
                 <div>อาคารจามจุรี 3 ชั้น 4.</div>
                 <div>โทร. 02- 218-3314 อีเมล์ help@chula.ac.th</div>
             </footer>
-            <div>
-                <div class="top-0 left-0 bg-black opacity-20 fixed w-screen h-screen"></div>
-                <div class="w-3/4 h-2/3 absolute bg-white border top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-2xl rounded-2xl">
+            <div id="initial-alert">
+                <div onclick="closeIniAlert();" class="top-0 left-0 bg-black opacity-20 fixed w-screen h-screen"></div>
+                <div class="max-w-[1000px] w-11/12 absolute bg-white border top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-2xl rounded-2xl">
                     <div class="flex flex-col h-full">
-                        <div class="flex justify-between items-center p-5 border-b">
+                        <div class="flex justify-between items-center p-5 border-b gap-3">
                             <span class="font-bold text-lg">ข้อกำหนดการเข้าสู่ระบบการลงทะเบียนเรียน</span>
-                            <span class="font-bold text-[#CCC] hover:text-[#7F7F7F] cursor-pointer">X</span>
+                            <span onclick="closeIniAlert();" class="font-bold text-[#CCC] hover:text-[#7F7F7F] cursor-pointer">X</span>
                         </div>
-                        <div class="p-5 py-10 grow overflow-y-scroll">
+                        <div class="p-5 grow overflow-y-scroll max-h-[500px]">
                             การเข้าสู่ระบบการลงทะเบียนเรียนของสำนักงานการทะเบียน มีข้อกำหนดดังนี้
                             <ul class="list-disc ps-10">
                                 <li>นิสิตจะต้องดำเนินการด้วยตนเอง และห้ามดำเนินการแทนนิสิตผู้อื่น มิฉะนั้นนิสิตจะถูกลงโทษทางวินัย</li>
@@ -78,8 +78,8 @@
                                 <li>ใช้งานได้ดีใน Internet Explorer</li>
                             </ul>
                         </div>
-                        <div class="flex justify-end items-center p-5 border-t h-fit">
-                            <button class="border-2 border-[#eb9999] hover:bg-[#eb9999] hover:text-white py-2 rounded-full px-4">Close</button>
+                        <div class="flex justify-end items-center p-3 border-t h-fit">
+                            <button onclick="closeIniAlert();" class="border-2 border-[#eb9999] hover:bg-[#eb9999] hover:text-white py-2 rounded-full px-4">Close</button>
                         </div>
                     </div>
                 </div>
@@ -87,6 +87,6 @@
         </main>
     </div>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
