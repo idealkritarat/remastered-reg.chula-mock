@@ -19,7 +19,7 @@
                 </div>
             </div>
         </nav>
-        <main class="grow flex flex-col min-h-screen">
+        <main class="grow flex flex-col min-h-screen relative">
             <div class="w-full py-3 px-4 flex justify-between items-center">
                 <button class="border-2 border-[#eb9999] hover:bg-[#eb9999] hover:text-white py-2 rounded-full px-4">ข้อกำหนด</button>
                 <button class="border-2 border-[#eb9999] hover:bg-[#eb9999] hover:text-white py-2 rounded-full px-4">EN</button>
@@ -58,7 +58,35 @@
                 <div>อาคารจามจุรี 3 ชั้น 4.</div>
                 <div>โทร. 02- 218-3314 อีเมล์ help@chula.ac.th</div>
             </footer>
+            <div>
+                <div class="top-0 left-0 bg-black opacity-20 fixed w-screen h-screen"></div>
+                <div class="w-3/4 h-2/3 absolute bg-white border top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-2xl rounded-2xl">
+                    <div class="flex flex-col h-full">
+                        <div class="flex justify-between items-center p-5 border-b">
+                            <span class="font-bold text-lg">ข้อกำหนดการเข้าสู่ระบบการลงทะเบียนเรียน</span>
+                            <span class="font-bold text-[#CCC] hover:text-[#7F7F7F] cursor-pointer">X</span>
+                        </div>
+                        <div class="p-5 py-10 grow overflow-y-scroll">
+                            การเข้าสู่ระบบการลงทะเบียนเรียนของสำนักงานการทะเบียน มีข้อกำหนดดังนี้
+                            <ul class="list-disc ps-10">
+                                <li>นิสิตจะต้องดำเนินการด้วยตนเอง และห้ามดำเนินการแทนนิสิตผู้อื่น มิฉะนั้นนิสิตจะถูกลงโทษทางวินัย</li>
+                                <li>นิสิตต้องรับผิดชอบผลการลงทะเบียนเรียนที่เกิดขึ้นจากรหัสผ่าน (Password) ของนิสิต</li>
+                                <li>สำนักงานการทะเบียนกำหนดให้นิสิตแต่ละคนยืนยันการลงทะเบียนเรียนได้ไม่เกินวันละ 10 ครั้ง</li>
+                                <li>นิสิตต้องตรวจสอบผลการลงทะเบียนเรียนทันทีทุกครั้งหลังจากที่ทำการลงทะเบียนเรียนสาย เพิ่ม-ลดรายวิชา หรือเปลี่ยนตอนเรียนผ่านทางอินเทอร์เน็ตและควรพิมพ์ผลการลงทะเบียนเรียน (CR54) หลังหมดกำหนดการเพิ่ม-ลดรายวิชา เพื่อตรวจสอบและเก็บไว้เป็นหลักฐาน</li>
+                                <li>ห้ามมิให้นิสิตกระทำการใดๆ อันเป็นการเข้าถึงระบบคอมพิวเตอร์โดยมิชอบ การลักลอบสำเนาหรือโอนถ่ายข้อมูล การก่อกวนระบบคอมพิวเตอร์ หรือการอื่นใดซึ่งอาจทำให้ระบบคอมพิวเตอร์เสียหาย (ระเบียบจุฬาลงกรณ์มหาวิทยาลัย ว่าด้วยวินัยนิสิต ฉบับที่ ๒ ข้อ ๘/๒) เช่นเขียนโปรแกรมยืนยันผลการลงทะเบียนเรียนแทนตัวนิสิต เป็นต้น นิสิตจะถูกลงโทษทางวินัย และ ห้ามเข้าระบบ</li>
+                                <li>สามารถรองรับการใช้งานได้ทุก Browser</li>
+                                <li>ใช้งานได้ดีใน Internet Explorer</li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-end items-center p-5 border-t h-fit">
+                            <button class="border-2 border-[#eb9999] hover:bg-[#eb9999] hover:text-white py-2 rounded-full px-4">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
+
+    
 </body>
 </html>
