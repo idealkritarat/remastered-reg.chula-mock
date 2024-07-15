@@ -10,7 +10,7 @@
 <body>
     <div class="flex">
         <nav>
-            <div class="w-[190px] h-screen bg-[#FCC] p-2 flex flex-col gap-2">
+            <div class="w-[190px] h-full min-h-screen  bg-[#FCC] p-2 flex flex-col gap-5">
                 <img src="https://www2.reg.chula.ac.th/cu/reg/images/toplogo01.gif" class="w-full">
                 <div class="w-full flex flex-col gap-2">
                     <button class="bg-[#f8a3a3] hover:bg-[#eb9999] text-[#3c1616] p-2 rounded">เข้าสู่ระบบ</button>
@@ -18,26 +18,26 @@
                 </div>
             </div>
         </nav>
-        <main class="grow flex flex-col">
+        <main class="grow flex flex-col min-h-screen">
             <div class="w-full py-3 px-4 flex justify-between items-center">
                 <button class="border-2 border-[#eb9999] hover:bg-[#eb9999] hover:text-white py-2 rounded-full px-4">ข้อกำหนด</button>
                 <button class="border-2 border-[#eb9999] hover:bg-[#eb9999] hover:text-white py-2 rounded-full px-4">EN</button>
             </div>
-            <div class="w-full h-full grow py-7">
+            <div class="w-full h-full grow py-7 px-3">
                 <div class="flex flex-col items-center gap-10">
-                    <div class="flex flex-col items-center gap-5">
+                    <div class="flex flex-col items-center gap-5 text-center">
                         <span class="font-extrabold text-3xl">เข้าสู่ระบบลงทะเบียนเรียน</span>   
                         <span class="font-semibold text-xl">กรุณาป้อนเลขประจำตัวนิสิต/เลขประจำตัวเจ้าหน้าที่  และรหัสผ่าน</span>    
                         <span class="font-semibold text-xl">รหัสผ่าน คือรหัสผ่านที่ใช้กับระบบอินเตอร์เน็ตของสำนักบริหารเทคโนโลยีสารสนเทศ จุฬาลงกรณ์มหาวิทยาลัย</span>
                     </div>
                     <div class="flex flex-col gap-5">
                         <div class="flex justify-between items-center gap-2">
-                            <span>เลขประจำตัว</span>
-                            <input type="text" class="outline-none border p-2 px-4 rounded-full w-80 focus:border-[#eb9999]" placeholder="Student ID (10 Letters)">
+                            <span class="text-nowrap">เลขประจำตัว</span>
+                            <input type="text" class="outline-none border p-2 px-4 rounded-full max-w-80 w-full focus:border-[#eb9999]" placeholder="Student ID (10 Letters)">
                         </div>
                         <div class="flex justify-between items-center gap-2">
-                            <span>รหัสผ่าน</span>
-                            <input type="password" class="outline-none border py-2 px-4 rounded-full w-80 focus:border-[#eb9999]" placeholder="Password">
+                            <span class="text-nowrap">รหัสผ่าน</span>
+                            <input type="password" class="outline-none border py-2 px-4 rounded-full max-w-80 w-full focus:border-[#eb9999]" placeholder="Password">
                         </div>
                         
                         <div class="flex flex-col items-center justify-between gap-3">
@@ -45,14 +45,12 @@
                                 <input type="text" class="outline-none border py-2 px-4 rounded-full w-36 focus:border-[#eb9999]">
                                 <img src="https://www2.reg.chula.ac.th/images/random/1721055911813tJLOlA8nMn_GBFeTzpiF8CR.png?0.679930770987799">
                                 <button><img src="https://www2.reg.chula.ac.th/requestDocument/sound-on.png"></button>
-                            </div>
-                            
-                            <span>ป้อนค่าตามภาพที่เห็น 4 หลัก ก่อนกดปุ่ม ตกลง</span>
+                            </div>   
+                            <span class="text-center">ป้อนค่าตามภาพที่เห็น 4 หลัก ก่อนกดปุ่ม ตกลง</span>
                         </div>
                     </div>      
-                    <button class="border-2 border-[#eb9999] hover:bg-[#eb9999] p-2.5 rounded-full w-[600px] hover:text-white">ตกลง</button>
+                    <button class="border-2 border-[#eb9999] hover:bg-[#eb9999] p-2.5 rounded-full w-full max-w-[600px] hover:text-white">ตกลง</button>
                 </div>
-                
             </div>
             <footer class="border-t-4 border-[#FCC] p-6 flex flex-col gap-2 font-medium">
                 <div>กรณีนิสิตลืมรหัสผ่าน CUNET สำหรับการเข้าสู่ระบบ ติดต่อที่สำนักบริหารเทคโนโลยีสารสนเทศ</div>
