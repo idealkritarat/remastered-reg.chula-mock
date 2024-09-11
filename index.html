@@ -21,8 +21,8 @@
         </nav>
         <main class="grow flex flex-col min-h-screen relative">
             <div class="w-full py-3 px-4 flex justify-between items-center">
-                <button class="border-2 border-[#eb9999] hover:bg-[#eb9999] hover:text-white py-2 rounded-full px-4">ข้อกำหนด</button>
-                <button class="border-2 border-[#eb9999] hover:bg-[#eb9999] hover:text-white py-2 rounded-full px-4">EN</button>
+                <button class="border-2 border-[#eb9999] hover:bg-[#eb9999] hover:text-white py-2 rounded-full px-4" onclick="toggleIniAlert();">ข้อกำหนด</button>
+                <button onclick="ChangePageLANG();" class="border-2 border-[#eb9999] hover:bg-[#eb9999] hover:text-white py-2 rounded-full px-4">EN</button>
             </div>
             <div class="w-full h-full grow py-7 px-3">
                 <div class="flex flex-col items-center gap-10">
@@ -58,13 +58,13 @@
                 <div>อาคารจามจุรี 3 ชั้น 4.</div>
                 <div>โทร. 02- 218-3314 อีเมล์ help@chula.ac.th</div>
             </footer>
-            <div id="initial-alert">
-                <div onclick="closeIniAlert();" class="top-0 left-0 bg-black opacity-20 fixed w-screen h-screen"></div>
-                <div class="max-w-[1000px] w-11/12 absolute bg-white border top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-2xl rounded-2xl">
+            <div id="initial-alert" style="transition: 1s all ease;">
+                <div onclick="toggleIniAlert();" class="top-0 left-0 bg-black opacity-20 fixed w-screen h-screen"></div>
+                <div class="max-w-[1000px] w-11/12 fixed bg-white border top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-2xl rounded-2xl">
                     <div class="flex flex-col h-full">
                         <div class="flex justify-between items-center p-5 border-b gap-3">
                             <span class="font-bold text-lg">ข้อกำหนดการเข้าสู่ระบบการลงทะเบียนเรียน</span>
-                            <span onclick="closeIniAlert();" class="font-bold text-[#CCC] hover:text-[#7F7F7F] cursor-pointer">X</span>
+                            <span onclick="toggleIniAlert();" class="font-bold text-[#CCC] hover:text-[#7F7F7F] cursor-pointer">X</span>
                         </div>
                         <div class="p-5 grow overflow-y-scroll max-h-[500px]">
                             การเข้าสู่ระบบการลงทะเบียนเรียนของสำนักงานการทะเบียน มีข้อกำหนดดังนี้
@@ -73,13 +73,12 @@
                                 <li>นิสิตต้องรับผิดชอบผลการลงทะเบียนเรียนที่เกิดขึ้นจากรหัสผ่าน (Password) ของนิสิต</li>
                                 <li>สำนักงานการทะเบียนกำหนดให้นิสิตแต่ละคนยืนยันการลงทะเบียนเรียนได้ไม่เกินวันละ 10 ครั้ง</li>
                                 <li>นิสิตต้องตรวจสอบผลการลงทะเบียนเรียนทันทีทุกครั้งหลังจากที่ทำการลงทะเบียนเรียนสาย เพิ่ม-ลดรายวิชา หรือเปลี่ยนตอนเรียนผ่านทางอินเทอร์เน็ตและควรพิมพ์ผลการลงทะเบียนเรียน (CR54) หลังหมดกำหนดการเพิ่ม-ลดรายวิชา เพื่อตรวจสอบและเก็บไว้เป็นหลักฐาน</li>
-                                <li>ห้ามมิให้นิสิตกระทำการใดๆ อันเป็นการเข้าถึงระบบคอมพิวเตอร์โดยมิชอบ การลักลอบสำเนาหรือโอนถ่ายข้อมูล การก่อกวนระบบคอมพิวเตอร์ หรือการอื่นใดซึ่งอาจทำให้ระบบคอมพิวเตอร์เสียหาย (ระเบียบจุฬาลงกรณ์มหาวิทยาลัย ว่าด้วยวินัยนิสิต ฉบับที่ ๒ ข้อ ๘/๒) เช่นเขียนโปรแกรมยืนยันผลการลงทะเบียนเรียนแทนตัวนิสิต เป็นต้น นิสิตจะถูกลงโทษทางวินัย และ ห้ามเข้าระบบ</li>
                                 <li>สามารถรองรับการใช้งานได้ทุก Browser</li>
                                 <li>ใช้งานได้ดีใน Internet Explorer</li>
                             </ul>
                         </div>
                         <div class="flex justify-end items-center p-3 border-t h-fit">
-                            <button onclick="closeIniAlert();" class="border-2 border-[#eb9999] hover:bg-[#eb9999] hover:text-white py-2 rounded-full px-4">Close</button>
+                            <button onclick="toggleIniAlert();" class="border-2 border-[#eb9999] hover:bg-[#eb9999] hover:text-white py-2 rounded-full px-4">Close</button>
                         </div>
                     </div>
                 </div>
